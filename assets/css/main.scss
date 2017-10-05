@@ -1,0 +1,41 @@
+---
+---
+
+body {
+    background: #eaeaea;
+}
+
+a {
+    color: #03A9F4;
+}
+
+.hero.is-info {
+    background: #03A9F4;
+}
+
+.links {
+    background: url("../img/pts1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#navbar-show:checked + .navbar-menu {
+    display: block;
+}
+
+label:focus {
+    color: red;
+}
+
+.section-selector:not(:checked) + section {
+    display: none;
+}
+
+.inner-text {
+    max-width: 45em;
+    margin: 0;
+}
+
+.twitter-timeline-rendered {
+    width: 100% !important;
+}
