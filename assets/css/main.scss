@@ -9,6 +9,13 @@ a {
     color: #03A9F4;
 }
 
+.navbar.is-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 .hero.is-info {
     background: #03A9F4;
 }
@@ -21,6 +28,7 @@ a {
 
 #navbar-show:checked + .navbar-menu {
     display: block;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.4);
 }
 
 label:focus {

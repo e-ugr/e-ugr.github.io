@@ -57,6 +57,39 @@
         </div>
       </div>
     </nav>
+    
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="{{ site.baseurl }}/">
+            {{ site.title }}
+          </a>
+          
+          <label class="button is-dark navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <input type="checkbox" hidden>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="{{ site.baseurl }}/">
+              <span class="icon"><i class="fa fa-home"></i></span>
+              <span>Inicio</span>
+            </a>
+            <a class="navbar-item" href="{{ site.baseurl }}/install">
+              <span class="icon"><i class="fa fa-cog"></i></span>
+              <span>Instalar</span>
+            </a>
+            <a class="navbar-item" href="{{ site.baseurl }}/about">
+              <span class="icon"><i class="fa fa-question"></i></span>
+              <span>Acerca de</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     {{ content }}
 
