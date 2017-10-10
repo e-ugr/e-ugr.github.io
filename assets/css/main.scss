@@ -19,6 +19,9 @@ a {
 .hero.is-info, .button.is-info {
     background: #03A9F4;
 }
+.button.is-info:hover {
+    background: darken(#03A9F4, 2%);
+}
 
 .links {
     background: url("../img/pts1.jpg");
