@@ -39,3 +39,19 @@ label:focus {
 .twitter-timeline-rendered {
     width: 100% !important;
 }
+
+.tabs {
+    border: solid rgba(255,255,255,0.2);
+    border-width: 1px 1px 0 1px;
+    background: rgba(0,0,0,0.2);
+
+    @media screen and (max-width: 768px) {
+        a .column:first-child {
+            padding-bottom: 0;
+        }
+
+        a .column:last-child {
+            padding-top: 0;
+        }
+    }
+}
