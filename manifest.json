@@ -3,7 +3,7 @@
 
 {
   "short_name": "#eugr",
-  "name": "#experienciaugr",
+  "name": "#eugr",
   "icons": [
     {
       "src": "{{ site.baseurl }}/assets/img/icon-96x96.png",
