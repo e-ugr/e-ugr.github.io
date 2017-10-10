@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half"> 
+        <canvas id="barcode" class="barcode"></canvas>
+      </div>
+    </div>
+    <div class="content">
+      <p>Configura aquí tu Tarjeta Universitaria Inteligente. No se transmitirá ningún dato fuera de tu teléfono móvil.</p>
+    </div>
+    <form class="form">
+      <div class="field has-addons">
+        <p class="control has-icons-left is-expanded">
+          <input type="number" class="input" id="tui_num" placeholder="Código de barras">
+          <span class="icon is-left"><i class="fa fa-id-card"></i></span>
+        </p>
+        <p class="control">
+          <input type="button" class="button is-info" id="save_tui" value="Guardar">
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <input type="button" class="button is-danger" id="delete_tui" value="Eliminar">
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/JsBarcode.code39.min.js"></script>
+<script type="text/javascript">
+  let tui_num = localStorage["tui"] ? localStorage["tui"] : "1234567";
+  JsBarcode("#barcode", tui_num, {
+  format: "code39",
+  lineColor: "#000",
+  displayValue: true
+  });
+
+  document.querySelector("#save_tui").addEventListener("click", function(e) {
+  localStorage["tui"] = document.querySelector("#tui_num").value.toString();
+  location.reload(true);
+  });
+  
+  document.querySelector("#delete_tui").addEventListener("click", function(e) {
+  localStorage.clear("tui");
+  location.reload(true);
+  });
+</script>

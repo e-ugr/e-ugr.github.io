@@ -16,7 +16,7 @@ a {
     z-index: 1;
 }
 
-.hero.is-info {
+.hero.is-info, .button.is-info {
     background: #03A9F4;
 }
 
@@ -62,4 +62,8 @@ label:focus {
             padding-top: 0;
         }
     }
+}
+
+.barcode {
+    width: 100%;
 }
