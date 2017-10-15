@@ -12,10 +12,12 @@
     <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
     <!-- Old Chrome web app -->
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#363636"/>
+    <link rel="icon" sizes="192x192" href="{{ site.baseurl }}/assets/img/icon-192x192.png">
     <!-- iOS web app -->
     <meta name="apple-mobile-web-app-title" content="#eugr">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/icon-96x96.png">
     <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/img/icon-144x144.png">
     <link rel="apple-touch-icon" sizes="192x192" href="{{ site.baseurl }}/assets/img/icon-192x192.png">
@@ -23,6 +25,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
   </head>
   <body>
     <nav class="navbar is-dark is-fixed" role="navigation" aria-label="main navigation">
@@ -31,7 +34,7 @@
           <a class="navbar-item" href="{{ site.baseurl }}/">
             {{ site.title }}
           </a>
-          
+
           <label class="button is-dark navbar-burger" for="navbar-show">
             <span></span>
             <span></span>
@@ -57,14 +60,14 @@
         </div>
       </div>
     </nav>
-    
+
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ site.baseurl }}/">
             {{ site.title }}
           </a>
-          
+
           <label class="button is-dark navbar-burger">
             <span></span>
             <span></span>
@@ -125,7 +128,7 @@
                 </span>
               </span>
             </a>
-                  
+
           </div>
         </div>
       </div>
