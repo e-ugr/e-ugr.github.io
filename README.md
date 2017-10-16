@@ -23,6 +23,12 @@ bundle
 bundle exec jekyll serve
 ~~~
 
+En ubuntu es necesario instalar `ruby-dev` para instalar todas las gemas necesarias. Esto se puede hacer con:
+
+	sudo apt-get install ruby-dev
+
+
+
 ### ¿Puedo hacer mi propia versión?
 
 ¡Te animamos a que lo hagas! Forkea y personaliza #eugr a tu gusto. Asegúrate de que configuras GitHub Pages para compilar la rama `master`. Las modificaciones que hagas deben ser distribuidas bajo [GPL v3](https://github.com/e-ugr/e-ugr.github.io/blob/master/LICENSE).
