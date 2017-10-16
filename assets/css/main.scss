@@ -24,9 +24,21 @@ a {
 }
 
 .links {
-    background: url("../img/pts1.jpg");
+    background: url("../img/pts2.jpg");
     background-size: cover;
     background-position: center;
+
+    .button {
+        background-color: rgba(255, 255, 255, 0.75);
+
+        &.is-info {
+            background-color: rgba(#03A9F4, 0.75);
+        }
+
+        &.is-warning {
+            background-color: rgba(#ffdd57, 0.75);
+        }
+    }
 }
 
 #navbar-show:checked + .navbar-menu {
