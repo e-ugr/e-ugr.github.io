@@ -44,7 +44,9 @@ title: TUI
     <div class="columns is-centered">
       <div class="column is-half">
         <figure class="image">
-          <div id="res"></div>
+          <div id="res">
+            <a id="tui_load" class="button is-loading is-fullwidth is-hidden" href="javascript:;" disabled></a> 
+          </div>
           <img src="" id="tui-pic" />
         </figure>
       </div>
@@ -111,12 +113,14 @@ title: TUI
   var upload =  document.getElementById('upload_tui');
   var res = document.getElementById("res");
   var img = document.getElementById("tui-pic");
+  var tui_load = document.getElementById("tui_load");
 
   upload.addEventListener("change", function(e) {
+    tui_load.classList.remove("is-hidden");
 
     var file = this.files[0];
     document.querySelector("#file_name").textContent = file.name;
-    var maxSize = 10000000; //10Mb
+    var maxSize = 6000000; //6Mb
 
     if (file.type.indexOf('image') < 0){
       res.innerHTML = "Formato no valido";
@@ -129,7 +133,7 @@ title: TUI
           }catch(e){
             var msg = e.message.toLowerCase();
 
-            if(msg.indexOf('storage') >- 1 || msg.indexOf('quota') > -1)  {
+            if(msg.indexOf('storage') > -1 || msg.indexOf('quota') > -1)  {
               if(file.type.match(/jpe?g/)){
                 console.log("Reduciendo calidad");
                 localStorage.setItem("imgTUI", getBase64Image(img, (file.size/maxSize), file.type, 0.7));
@@ -147,6 +151,8 @@ title: TUI
       }
       fReader.readAsDataURL(file);
     }
+    
+    tui_load.classList.add("is-hidden");
   });
 
   //Función que encontré alguna vez en stackoverflow. No tengo la referencia :(
