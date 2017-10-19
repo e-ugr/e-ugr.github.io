@@ -1,0 +1,43 @@
+<h4 class="title is-4">Foto de la tarjeta</h4>
+
+
+<div class="columns is-centered">
+  <div class="column is-half">
+    <figure class="image">
+      <div id="res">
+        <a id="tui_load" class="button is-loading is-fullwidth is-hidden" href="javascript:;" disabled></a>
+      </div>
+      <img src="" id="tui-pic" />
+    </figure>
+  </div>
+</div>
+<div class="content">
+  <p>
+    Sube aquí una imagen de tu TUI para mostrar. Sólo se almacena en tu móvil.
+  </p>
+</div>
+<form class="form">
+  <!-- Upload -->
+  <div class="field file has-name is-fullwidth">
+    <label class="file-label">
+      <input class="file-input" type="file" id="upload_tui" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+                <i class="fa fa-upload"></i>
+        </span>
+        <span class="file-label">
+                Sube un archivo
+        </span>
+      </span>
+      <span class="file-name" id="file_name">
+        (Ningún archivo seleccionado)
+      </span>
+    </label>
+  </div>
+
+  <div class="field">
+    <p class="control">
+      <input type="button" class="button is-danger" id="delete_image" value="Eliminar foto">
+    </p>
+  </div>
+</form>

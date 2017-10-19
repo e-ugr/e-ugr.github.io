@@ -1,26 +1,27 @@
 ---
 layout: default
 title: Inicio
+include_folder: main
 ---
 
-{% include install_banner.html %}
+{% include {{page.include_folder}}/install_banner.html %}
 
 <section class="hero is-dark links">
-{% include main_menu.html %}
+{% include {{page.include_folder}}/main_menu.html %}
 
-{% include section_selector_menu.html %}
+{% include {{page.include_folder}}/section_selector_menu.html %}
 </section>
 
 <input type="radio" name="section" id="section1" class="section-selector" value=1 checked hidden>
-{% include tweets_canalugr.html %}
+{% include {{page.include_folder}}/tweets_canalugr.html %}
 
 <input type="radio" name="section" id="section3" class="section-selector" value=3 hidden>
-{% include tweets_eugr.html %}
+{% include {{page.include_folder}}/tweets_eugr.html %}
 
 <input type="radio" name="section" id="webpages" class="section-selector" value=3 hidden>
-{% include facultades.html %}
+{% include {{page.include_folder}}/facultades.html %}
 
 <input type="radio" name="section" id="section2" class="section-selector" value=2 hidden>
-{% include gatetes.html %}
+{% include {{page.include_folder}}/gatetes.html %}
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

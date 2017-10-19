@@ -1,0 +1,24 @@
+<div class="columns is-centered">
+  <div class="column is-half">
+    <canvas id="barcode" class="barcode"></canvas>
+  </div>
+</div>
+<div class="content">
+  <p>Configura aquí tu Tarjeta Universitaria Inteligente introduciendo el <strong>número bajo el código de barras</strong> que verás en el reverso. El código sólo se almacena en tu móvil, no se transmite ningún dato fuera.</p>
+</div>
+<form class="form">
+  <div class="field has-addons">
+    <p class="control has-icons-left is-expanded">
+      <input type="number" class="input" id="tui_num" placeholder="Código de barras">
+      <span class="icon is-left"><i class="fa fa-id-card"></i></span>
+    </p>
+    <p class="control">
+      <input type="button" class="button is-info" id="save_tui" value="Guardar">
+    </p>
+  </div>
+  <div class="field">
+    <p class="control">
+      <input type="button" class="button is-danger" id="delete_tui" value="Eliminar">
+    </p>
+  </div>
+</form>
