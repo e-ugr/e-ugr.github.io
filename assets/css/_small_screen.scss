@@ -1,0 +1,12 @@
+$mobile-font-size: 0.75rem;
+
+
+@media screen and (max-width: 350px){
+    .button{
+        border-radius: 2px;
+        font-size: $mobile-font-size;
+    }
+    .control.has-icons-left{
+        font-size: $mobile-font-size;
+    }
+}
