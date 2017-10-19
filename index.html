@@ -40,7 +40,7 @@ title: Inicio
               <span>SWAD</span>
             </a>
             <span class="icon is-left has-text-dark"><i class="fa fa-book"></i></span>
-          </p>            
+          </p>
         </div>
       </div>
       <div class="columns is-mobile">
@@ -50,7 +50,7 @@ title: Inicio
               <span>CIGES</span>
             </a>
             <span class="icon is-left has-text-dark"><i class="fa fa-qrcode"></i></span>
-          </p>            
+          </p>
         </div>
         <div class="column">
           <div class="field has-addons">
@@ -78,7 +78,7 @@ title: Inicio
           </p>
         </div>
         <div class="column">
-          <div class="field has-addons">  
+          <div class="field has-addons">
             <p class="control is-expanded has-icons-left">
               <a class="button is-fullwidth" href="https://webmailest.ugr.es/">
                 <span>Correo</span>
@@ -169,174 +169,15 @@ title: Inicio
 </section>
 
 <input type="radio" name="section" id="section1" class="section-selector" value=1 checked hidden>
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <div class="card">
-          <div class="card-image">
-            <a class="button is-fullwidth twitter-timeline" data-lang="es" data-height="600" data-dnt="true" href="https://twitter.com/CanalUGR?ref_src=twsrc%5Etfw">
-              <span class="icon"><i class="fa fa-twitter"></i></span>
-              <span>Tweets de CanalUGR</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include tweets_canalugr.html %}
 
 <input type="radio" name="section" id="section3" class="section-selector" value=3 hidden>
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <div class="card">
-          <div class="card-image">
-            <a class="button is-fullwidth twitter-timeline" data-lang="es" data-height="600" data-dnt="true" href="https://twitter.com/hashtag/eugr" data-widget-id="916283547362656256">
-              <span class="icon"><i class="fa fa-twitter"></i></span>
-              <span>Tweets sobre #eUGR</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include tweets_eugr.html %}
 
 <input type="radio" name="section" id="webpages" class="section-selector" value=3 hidden>
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <p><a class="button is-link" href="http://etsag.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Arquitectura</span>
-        </a></p>
-        <p><a class="button is-link" href="http://bellasartes.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Bellas Artes</span>
-        </a></p>
-        <p><a class="button is-link" href="http://etsiccp.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Caminos, Canales y Puertos</span>
-        </a></p>
-        <p><a class="button is-link" href="http://fciencias.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias</span>
-        </a></p>
-        <p><a class="button is-link" href="http://deporte.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias del Deporte</span>
-        </a></p>
-        <p><a class="button is-link" href="http://fccee.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias Económicas y Empresariales</span>
-        </a></p>
-        <p><a class="button is-link" href="http://educacion.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias de la Educación</span>
-        </a></p>
-        <p><a class="button is-link" href="http://polisocio.ugr.es./">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias Políticas y Sociología</span>
-        </a></p>
-        <p><a class="button is-link" href="http://www.ugr.es/~ccsalud/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias de la Salud</span>
-        </a></p>
-        <p><a class="button is-link" href="http://enfermeriaceuta.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias de la Salud de Ceuta</span>
-        </a></p>
-        <p><a class="button is-link" href="http://faciso.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias Sociales de Melilla</span>
-        </a></p>
-        <p><a class="button is-link" href="http://citrab.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ciencias del Trabajo</span>
-        </a></p>
-        <p><a class="button is-link" href="http://fcd.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Comunicación y Documentación</span>
-        </a></p>
-        <p><a class="button is-link" href="http://derecho.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Derecho</span>
-        </a></p>
-
-        <p><a class="button is-link" href="http://feh-ceuta.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Educación, Economía y Tecnología de Ceuta</span>
-        </a></p>
-        <p><a class="button is-link" href="http://faedumel.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Educación y Humanidades de Melilla</span>
-        </a></p>
-        <p><a class="button is-link" href="http://www.ugr.es/~euenfermeriamelilla/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Enfermería de Melilla</span>
-        </a></p>
-        <p><a class="button is-link" href="http://farmacia.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Farmacia</span>
-        </a></p>
-        <p><a class="button is-link" href="http://filosofiayletras.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Filosofía y Letras</span>
-        </a></p>
-        <p><a class="button is-link" href="https://etsiit.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Informática y Telecomunicación</span>
-        </a></p>
-        <p><a class="button is-link" href="http://etsie.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Ingeniería de Edificación</span>
-        </a></p>
-        <p><a class="button is-link" href="http://www.ugr.es/~facmed/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Medicina</span>
-        </a></p>
-        <p><a class="button is-link" href="http://odontologia.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Odontología</span>
-        </a></p>
-        <p><a class="button is-link" href="http://facultadpsicologia.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Psicología</span>
-        </a></p>
-        <p><a class="button is-link" href="http://trabajosocial.ugr.es/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Trabajo Social</span>
-        </a></p>
-        <p><a class="button is-link" href="http://www.ugr.es/~factrad/">
-            <span class="icon"><i class="fa fa-building"></i></span>
-            <span>Traducción e Interpretación</span>
-        </a></p>
-      </div>
-    </div>
-  </div>
-</section>
+{% include facultades.html %}
 
 <input type="radio" name="section" id="section2" class="section-selector" value=2 hidden>
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-1by1">
-              <img src="https://place.cat/c/360/360">
-            </figure>
-          </div>
-          <div class="card-content">
-            <p>Imagen de <a href="http://place.cat/">Place.cat</a>. Actualiza la página para ver otro gatete :3</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include gatetes.html %}
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
