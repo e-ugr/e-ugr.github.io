@@ -23,11 +23,21 @@ bundle
 bundle exec jekyll serve
 ~~~
 
-En ubuntu es necesario instalar `ruby-dev` para instalar todas las gemas necesarias. Esto se puede hacer con:
+En Debian y distribuciones derivadas (como Ubuntu) es necesario instalar `ruby-dev` para instalar todas las gemas necesarias. Esto se puede hacer con:
 
 	sudo apt-get install ruby-dev
 
+En ArchLinux y distribuciones derivadas puedes instalar ruby para instalar las gemas necesarias con:
 
+	sudo pacman -S ruby
+
+En Fedora puedes instalar ruby con:
+
+	sudo dnf install ruby
+
+Una vez instalado Ruby es necesario instalar bundler, para ello simplemente ejecutar:
+	
+	gem install bundler
 
 ### ¿Puedo hacer mi propia versión?
 
