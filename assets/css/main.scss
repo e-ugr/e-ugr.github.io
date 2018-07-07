@@ -3,9 +3,33 @@
 
 @import 'small_screen';
 
+$max-width: 40rem;
+
 body {
     background: #eaeaea;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+main {
+     flex: 1;
+}
+
+.link-list {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 1rem;
+     max-width: $max-width;
+     margin: 0 auto;
+}
+.is-double {
+     grid-column-end: span 2;
+}
+.link-list > div.field {
+     margin-bottom: 0;
+}
+
+
 
 a {
     color: #03A9F4;
@@ -67,6 +91,29 @@ label:focus {
             padding-top: 0;
         }
     }
+}
+
+.highlight {
+     margin-top: -3rem; 
+}
+.highlight:after {
+     content: "";
+     display: block;
+     border-top: .3rem solid #03A9F4;
+     width: 25%;
+}
+.highlight.h2:after {
+     margin-left: 25%;
+}
+.highlight.h3:after {
+     margin-left: 50%;
+}
+.highlight.h4:after {
+     margin-left: 75%;
+}
+
+section.section {
+     padding: 3rem 0;
 }
 
 .barcode {
