@@ -93,6 +93,33 @@ label:focus {
     }
 }
 
+.my-tabs {
+    background: rgba(0,0,0,0.3);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    label {
+          display: grid;
+          grid-template-columns: 2rem max-content;
+          grid-template-rows: 3rem;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          cursor: pointer;
+          grid-gap: 0 1rem;
+          outline: 0px solid;
+    }
+
+    @media screen and (max-width: 768px) {
+        label {
+              grid-template-columns: 1fr;
+              grid-template-rows: max-content 1.5rem;
+              font-size: $mobile-font-size;
+        }
+    }
+}
+
 .highlight {
      margin-top: -3rem; 
 }
