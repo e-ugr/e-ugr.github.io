@@ -2,3 +2,5 @@ title: "#eugr"
 
 university: "Universidad de Granada"
 university_short: "UGR"
+sass:
+  sass_dir: assets/css

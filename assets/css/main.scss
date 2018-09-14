@@ -1,9 +1,35 @@
 ---
 ---
 
+@import 'small_screen';
+
+$max-width: 40rem;
+
 body {
     background: #eaeaea;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+main {
+     flex: 1;
+}
+
+.link-list {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 1rem;
+     max-width: $max-width;
+     margin: 0 auto;
+}
+.is-double {
+     grid-column-end: span 2;
+}
+.link-list > div.field {
+     margin-bottom: 0;
+}
+
+
 
 a {
     color: #03A9F4;
@@ -65,6 +91,56 @@ label:focus {
             padding-top: 0;
         }
     }
+}
+
+.my-tabs {
+    background: rgba(0,0,0,0.3);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    label {
+          display: grid;
+          grid-template-columns: 2rem max-content;
+          grid-template-rows: 3rem;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          cursor: pointer;
+          grid-gap: 0 1rem;
+          outline: 0px solid;
+    }
+
+    @media screen and (max-width: 768px) {
+        label {
+              grid-template-columns: 1fr;
+              grid-template-rows: max-content 1.5rem;
+              font-size: $mobile-font-size;
+        }
+    }
+}
+
+.highlight {
+     margin-top: -3rem; 
+}
+.highlight:after {
+     content: "";
+     display: block;
+     border-top: .3rem solid #03A9F4;
+     width: 25%;
+}
+.highlight.h2:after {
+     margin-left: 25%;
+}
+.highlight.h3:after {
+     margin-left: 50%;
+}
+.highlight.h4:after {
+     margin-left: 75%;
+}
+
+section.section {
+     padding: 3rem 0;
 }
 
 .barcode {
