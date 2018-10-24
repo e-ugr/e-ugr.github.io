@@ -2,6 +2,8 @@
 
 #eugr es una aplicación web que te da acceso rápido a los servicios electrónicos de la Universidad de Granada. No es una aplicación oficial de la Universidad de Granada y no tiene ningún tipo de relación con la misma.
 
+[![Imagen de la aplicación web #eugr](screenshot_eugr.png?raw=true "Title")](https://e-ugr.github.io/)
+
 ## Cómo contribuir
 
 ### Código
